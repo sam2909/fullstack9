@@ -1,0 +1,409 @@
+/*reset css*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: monospace;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* end reset css */
+
+
+/*Tooltip*/
+
+.ex_tooltip {
+    border: 1px solid rebeccapurple;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.tooltip{
+    display: inline;
+    position: relative;
+}
+
+.ttblock {
+    display: none;
+    position: absolute;
+    text-wrap: nowrap;
+    border: 1px solid rebeccapurple;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 0 10px;
+    background-color: rgb(183, 140, 224);
+}
+
+.ttcontent+.ttblock {
+    opacity: 0;
+    
+}
+.ttcontent:hover{
+    color:whitesmoke;
+    font-weight: bold;
+    background-color: blueviolet;
+}
+.ttcontent:hover+.ttblock{
+    display: block;
+}
+.ttcontent:hover+.ttblock{
+    opacity: 1;
+    /* transition:opacity 5s ease-in; */
+    transition: opacity 0.3s linear 2s;
+}
+
+
+.pbot::after{
+    position: absolute;
+    content: " ";
+    border: 10px solid transparent;
+    border-top: 10px solid black;
+    top: 100%;
+    left: 50%;
+    border-bottom: 0px;
+    transform: translateX(-50%);
+}
+.pbot{
+    bottom: 100%;
+    transform: translateX(-50%) translateY(-10px);
+    left: 50%;
+}
+.ptop::after {
+    position: absolute;
+    content: " ";
+    border: 10px solid transparent;
+    border-bottom: 10px solid black;
+    bottom: 100%;
+    left: 50%;
+    border-top: 0px;
+    transform: translateX(-50%);
+}
+
+.ptop{
+    top: 100%;
+    transform: translateX(50%) translateY(10px);
+    right: 50%;
+}
+
+/*Menu mũi tên*/
+
+.nav {
+    background-color: rgb(65, 62, 62);
+    margin: 20px;
+    display: flex;
+}
+
+.nav>li ul {
+    display: none;
+}
+
+ul.nav li {
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+a:hover {
+    background-color: rgb(108, 110, 110);
+}
+
+
+
+#clk_menu{
+    display: none;
+}
+
+ul.nav li:hover > ul {
+    background-color: rgb(65, 62, 62);
+    display: block;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+ul.nav > li > ul {
+    left: 0 !important;
+    top: 100% !important;
+}
+
+li.v_menu{
+    position: relative;
+}
+li.v_menu:has(ul):after{
+    content: "";
+    display: block;
+    border: 5px solid transparent;
+    border-left: 5px solid rgb(192, 50, 50);
+    border-right: 0;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-100%);
+}
+
+ul.nav > li.v_menu:has(ul)::after{
+    content: "";
+    display: block;
+    border: 5px solid transparent;
+    border-top: 5px solid rgb(134, 102, 228);
+    border-bottom: 0;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateY(-100%) translateX(-50%);
+}
+
+.nav li>a {
+    text-decoration: none;
+    text-wrap: nowrap;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    color: aliceblue;
+    display: inline-block;
+    text-align: center;
+}
+.menu_text{
+    padding: 0 10px;
+}
+
+
+/*Switch*/
+input#btncl2 , input#btncl{
+    display: none;
+}
+
+.btnsw{
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: rgb(104, 132, 234);
+    margin: 0 auto;
+    line-height: 30px;
+    position: relative;
+}
+
+.cirl{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    margin: 0 2px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+
+#btncl:checked + div.cirl{
+    background-color: rgb(240, 218, 16);
+    left: 100%;
+    transition: 0.1s ease;
+    margin-left: -4px; 
+    transform: translateX(-100%) translateY(-50%);
+}
+
+#btncl2:checked+div.cirl {
+    background-color: rgb(240, 218, 16);
+    left: 34px;
+    transition: 0.1s ease-in-out;
+}
+
+/*Menu Mobile*/
+.navbar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.m_menu ul{
+    background-color: chocolate;
+    min-width: 20px;
+    display: inline-block;
+}
+
+.m_menu ul li a span{
+    padding: 10px;
+}
+
+
+
+div.m_menu a:hover{
+    background-color: rgb(229, 132, 5);
+}
+
+div.m_menu li>ul{
+    display: none;
+}
+
+div.m_menu li:hover > ul{
+    display: block;
+    background-color: rgb(208, 127, 29);
+}
+
+div.m_menu a{
+    text-decoration: none;
+    text-wrap: nowrap;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    color: aliceblue;
+    display: inline-block;
+    text-align: center;
+}
+
+ul.tog_menu {
+    left: -10000px;
+    position: relative;
+}
+
+input.tog_menu_ctrl:checked + ul.tog_menu{
+    display: inline-block;
+    left: 0;
+    transition: left 0.15s ease-in-out;
+    z-index: 9999;
+}
+.tog_menu_btn{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: brown;
+}
+.tog_menu_ctrl{
+    display: none;
+}
+input.tog_menu_ctrl:checked ~ div.ovl {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(53, 55, 56, 0.412);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
