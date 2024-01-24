@@ -1,0 +1,133 @@
+/* reset css */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* reset css */
+
+#content{
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.circle{
+    height: 200px;
+    width: 200px;
+    display: inline;
+    border-radius: 50%;
+}
+
+.bar1{
+    background-image: radial-gradient(white 50%, transparent 50%), conic-gradient(#50C878 70%, #eee 70%);
+}
+.bar2{
+    position: relative;
+    background-image: conic-gradient(#9CF76E 60%, transparent 40%) ,radial-gradient(#94A88A 60%, transparent 60%);
+}
+
+.bar3{
+    position: relative;
+    background-image: radial-gradient(#666666 40%, transparent 40%), radial-gradient(white 50%, transparent 50%) , conic-gradient(transparent 20%, #0073E6 20%) ;
+}
+
+.bar4 {
+    position: relative;
+    background-image: radial-gradient(white 65%, transparent 65%), conic-gradient(#eee 10% , #50C878 10% );
+}
+
+.bar5 {
+    position: relative;
+    background-image: radial-gradient(white 65%, transparent 65%) , conic-gradient( #ffffff 10%,
+        transparent 10%), repeating-conic-gradient(rgb(250, 250, 250) 0.5%,rgb(250, 250, 250) 1%, #50C878 1%, #50C878 1.5%);
+}
+
+.bar6{
+    position: relative;
+    background-color: #b3d9ff;
+    background-image: radial-gradient(#b3d9ff 40%, transparent 40%), conic-gradient(#b3d9ff 24.5%, transparent 24.5%) ,repeating-conic-gradient(#0073e6 0%, #0073e6 24.5%, #b3d9ff 24.5%, #b3d9ff 25%);
+}
+
+.bar7{
+    background-image: radial-gradient(white 55%, transparent 55%), conic-gradient(#50C878 70%,transparent 70%), repeating-radial-gradient(#50c878b2 71%,
+        #50c878b2 80%,
+        transparent 80%,
+        transparent 85%);
+}
+
+.bar8 {
+    background-image: radial-gradient(white 57%, transparent 55%), conic-gradient(transparent 70%, #888888 70%) , repeating-radial-gradient(transparent 45%,
+        transparent 47%,
+        #ffffff 47%,
+        #ffffff 57%);
+    background-color: #888888;
+}
+
+.data-text{
+    position: absolute;
+    font-size: larger;
+    font-family: sans-serif;
+    color: #FEFFFE;
+    top: 50%;
+    left: 50%;
+    padding: 5px;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.206);
+    border: 1px solid rebeccapurple;
+}
+
+.black-text{
+    color: black;
+}
+
+.text-above{
+    transform: translateY(-100%) translateX(-50%);
+    border: transparent;
+    border-bottom: 2px solid #FEFEFE;
+}
+
+.c0073e6{
+    color: #0073e6;
+}
+
+.text-below {
+    transform:  translateX(-50%);
+    border: transparent;
+    border-top: 2px solid #FEFEFE;
+}
+
+.no-bgc{
+    background-color: transparent;
+}
