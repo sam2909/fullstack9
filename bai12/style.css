@@ -1,0 +1,364 @@
+/* reset css */
+html {
+    box-sizing: border-box;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #170f23;
+    color: #D3D3D4;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* reset css */
+
+@media screen and (max-width: 576px){
+    .main {
+            display: flex;
+            font-size: 1.5rem;
+            color: inherit;
+        }
+    
+        /* sidebar menu */
+        .logo {
+            display: inline-block;
+            /* max-width: 50%; */
+            padding: 20px;
+        }
+    
+        .logo img {
+            display: inline-block;
+            max-width: 40px;
+            /* max-height: 10%; */
+        }
+    
+        #sidebar-menu {
+            background-color: rgb(35, 27, 46);
+            display: none;
+        }
+    
+        #sidebar-menu li {
+            height: 50px;
+            line-height: 50px;
+        }
+
+        span.tt-text{
+            display: none;
+        }
+
+        span.live{
+            display: none;
+        }
+
+        #sidebar-menu .v-menu li a {
+            text-decoration: none;
+            color: inherit;
+            padding: 20px;
+        }
+    
+        #sidebar-menu .v-menu li:hover {
+            background-color: rgb(113, 85, 151);
+        }
+    
+        /* header and menubar */
+    
+        /* .header-left */
+        #content {
+            width: 100%;
+        }
+    
+        div#header {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        #header .header-left {
+            flex-grow: 5;
+            position: relative;
+        }
+    
+    
+        #header .header-left .arrow,
+        #header .header-left .searchbox {
+            display: inline-block;
+            padding: 10px;
+        }
+    
+        #header .header-left .searchbox input {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 80%;
+            border-radius: 10px;
+            background-color: rgba(235, 188, 238, 0.171);
+            color: #D3D3D4;
+        }
+    
+        /* .header-right */
+        #header .header-right {
+            flex-grow: 1;
+            display: flex;
+        }
+
+        #header .header-right .menu-account .download{
+            display: none;
+        }
+    
+        #header .header-right .menu-account {
+            margin: 0 auto;
+        }
+    
+        .header-right .menu-account div {
+            display: inline-block;
+            margin: 5px;
+        }
+    
+        .header-right .menu-account span {
+            display: inline-block;
+            text-wrap: nowrap;
+            border-radius: 10px;
+            background-color: blue;
+            padding: 5px 10px;
+        }
+    
+        /* MID CONTENT */
+        #content .mid-content {
+        }
+    
+        /* recent-songs */
+        .mid-content .recent-songs .recent-songs-header {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .mid-content .recent-songs .recent-songs-header div {
+            height: 5rem;
+            line-height: 5rem;
+        }
+    
+        .mid-content .recent-songs .recent-songs-header div a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: inherit;
+        }
+    
+        .mid-content .recent-songs .recent-songs-content>div {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            border: 1px solid rgba(200, 99, 196, 0.182);
+        }
+        .mid-content .recent-songs .recent-songs-content>div:first-child {
+            border-top: 1px solid transparent;
+        }
+    
+        .mid-content .recent-songs .recent-songs-content>div {
+        }
+    
+        .mid-content .recent-songs .recent-songs-content div img {
+            height: 250px;
+        }
+    
+        /* LEFT-SIDEBAR */
+        #left-sidebar {
+            display: none;
+        }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .main {
+            display: flex;
+            font-size: 1.5rem;
+            color: inherit;
+        }
+    
+        /* sidebar menu */
+        .logo {
+            padding: 30px;
+        }
+    
+        .logo img {
+            max-height: 30px;
+        }
+    
+        #sidebar-menu {
+            min-width: 200px;
+            background-color: rgb(35, 27, 46);
+        }
+    
+        #sidebar-menu li {
+            height: 50px;
+            line-height: 50px;
+        }
+    
+        #sidebar-menu .v-menu li a {
+            text-decoration: none;
+            color: inherit;
+            padding: 20px;
+            text-wrap: nowrap;
+        }
+    
+        #sidebar-menu .v-menu li:hover {
+            background-color: rgb(113, 85, 151);
+        }
+    
+        .live {
+            background-color: rgb(255, 10, 10);
+            border-radius: 5px;
+            padding: 0 5px;
+            min-width: 10px;
+        }
+    
+        /* header and menubar */
+    
+        /* .header-left */
+        #content {
+            width: 70%;
+        }
+    
+        div#header {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        #header .header-left {
+            flex-grow: 5;
+            position: relative;
+        }
+    
+    
+        #header .header-left .arrow,
+        #header .header-left .searchbox {
+            display: inline-block;
+            padding: 10px;
+        }
+    
+        #header .header-left .searchbox input {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 80%;
+            border-radius: 10px;
+            background-color: rgba(235, 188, 238, 0.171);
+            color: #D3D3D4;
+        }
+    
+        /* .header-right */
+        #header .header-right {
+            flex-grow: 1;
+            display: flex;
+        }
+    
+        #header .header-right .menu-account {
+            margin: 0 auto;
+        }
+    
+        .header-right .menu-account div {
+            display: inline-block;
+            margin: 5px;
+        }
+    
+        .header-right .menu-account span {
+            display: inline-block;
+            text-wrap: nowrap;
+            border-radius: 10px;
+            background-color: blue;
+            padding: 5px 10px;
+        }
+    
+        /* MID CONTENT */
+        #content .mid-content {
+        }
+    
+        #content .mid-content .songs {
+            display: flex;
+            gap: 5px;
+        }
+    
+        #content .mid-content .songs .recent-songs-header div {
+            max-width: 33%;
+        }
+    
+        /* recent-songs */
+        .mid-content .recent-songs .recent-songs-header {
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .mid-content .recent-songs .recent-songs-header div {
+            height: 5rem;
+            line-height: 5rem;
+        }
+    
+        .mid-content .recent-songs .recent-songs-header div a {
+            text-decoration: none;
+            font-size: 1rem;
+            color: inherit;
+        }
+    
+        .mid-content .recent-songs .recent-songs-content {
+            display: flex;
+            gap: 20px;
+        }
+    
+        .mid-content .recent-songs .recent-songs-content>div {
+            max-width: 25%;
+            height: 200px;
+        }
+    
+        .mid-content .recent-songs .recent-songs-content div img {
+            height: 250px;
+        }
+    
+    
+        /* LEFT-SIDEBAR */
+        #left-sidebar {
+            display: flex;
+            align-items: center;
+        }
+    
+        #left-sidebar .newsongs {
+            display: inline-block;
+            background-color: blue;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 15px;
+            border-radius: 15px;
+            text-wrap: nowrap;
+        }
+}
