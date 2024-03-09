@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #111111;
+    box-sizing: border-box;
+    font-family: Overpass, sans-serif;
+}
+html{
+    font-size: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;   
+}
+
+.container-center{
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.ext-bold{
+    font-weight: 800;
+}
+.pos-rel{
+    position: relative;
+}
+.pos-abs{
+    position: absolute;
+}
+
+header{
+    padding-top: 4.8rem;
+    padding-bottom: 24rem;
+    background: url(images/hero-bg.png) no-repeat;
+    background-size:cover;
+}
+#logo{
+    align-items: center;
+}
+.nav{
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+#fb-ico{
+    width: 10px;
+    height: 20px;
+    background: url(images/social_links.png) no-repeat 0px 0px;
+}
+
+#tw-ico{
+    width: 20px;
+    height: 20px;
+    background: url(images/social_links.png) no-repeat -28px 0px;
+}
+
+#yt-ico{
+    width: 21px;
+    height: 20px;
+    background: url(images/social_links.png) no-repeat -67px 0px;
+}
+
+#ig-ico{
+    width: 20px;
+    height: 20px;
+    background: url(images/social_links.png) no-repeat -109px 0px;
+}
+
+.container-center .main-menu a{
+    display: inline-block;
+    height: 48px;
+    line-height: 48px;
+    width: 100px;
+    font-size: 2rem;
+}
+
+.main-menu button{
+    width: 181px;
+    background-color: transparent;
+    border: 2px solid #c04ae2;
+    font-family: Overpass;
+    font-size: 18px;
+    border-radius: 7px;
+    margin: 0 30px;
+}
+
+#social-icon{
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+#hero-section{
+    padding-top: 168px;
+}
+
+#hero-section .hero-content{
+    flex-basis: 50%;
+    padding-right: 1.0rem;
+}
+
+#hero-section .hero-content h1{
+    font-size: 9rem;
+    line-height: 10.8rem;
+    padding-bottom: 1.4rem;
+}
+#hero-section .hero-content p{
+    font-family: Roboto, sans-serif;
+    font-size: 3rem;
+    line-height: 4.2rem;
+    color: #5e5858;
+    padding-top: 1.4rem;
+}
+#hero-section img{
+    flex-basis: 50%;
+    object-fit: cover;
+    padding-left: 3rem;
+}
+
+#hero-section .hero-content button{
+    font-size: 2.4rem;
+    margin-top: 6.2rem;
+    padding: 2.5rem 5.9rem;
+    background-color: #c04ae2;
+    border: 1px solid #c04ae2;
+    border-radius: 7px;
+    box-shadow: 0 1rem 1.8rem rgba(0, 0, 0, 0.08);
+}
