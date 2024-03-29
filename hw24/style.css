@@ -1,0 +1,99 @@
+/* reset css */
+*{
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    padding: 50px;
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+.show{
+    opacity: 1!important;
+}
+
+menu{
+    margin: 10px;
+}
+
+menu .main-nav{
+    background-color: #3c3c3c;
+    color: white;
+    margin: 5px;
+    width: 20vw;
+}
+
+menu .main-nav a{
+    color: white;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+menu .main-nav li:hover{
+    background-color: #535151;
+}
+.nav-child li:hover{
+    background-color: #8d8a8a!important;
+}
+.main-nav .nav-par{
+    cursor: pointer;
+}
+
+ul .nav-child{
+    opacity: 0;
+    transition: all 5s ease;
+}
+
+/* TAB section */
+#tabs-section{
+    margin: 10px;
+}
+#tabs-title{
+    display: flex;
+    /* gap: 5px; */
+}
+#tabs-title div{
+    width: 100px;
+    font-weight: bold;
+    color: aliceblue;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    background-color: #535151;
+    border: 1px solid rgb(130, 126, 126);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#tabs-title div:hover{
+    background-color: #6f6d6d;
+    transform: scale(1.1);
+}
+
+
+#tabs-content{
+    max-width: 500px;
+    text-wrap: wrap;
+    margin-top: 5px;
+    padding: 10px 5px;
+    border: 1px solid #6f6d6d;
+}
+.active{
+    background-color: #7f7d7d!important;
+    border: 1px solid #b8cbd5!important;
+    font-size: 20px;
+}
