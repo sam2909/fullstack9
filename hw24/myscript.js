@@ -1,3 +1,6 @@
+document.title = document.getElementById('docTitle').innerText
+
+
 var parMenu = document.querySelectorAll('[toggleParMenu]');
 
 parMenu.forEach((nav)=>{
@@ -15,8 +18,13 @@ var tabBtn = document.querySelectorAll('[tabBtn]')
 var divContent = document.getElementById('tabs-content');
 tabBtn.forEach((tab)=>{
     let id = tab.dataset.collTarget
+    
     let tabContent = document.getElementById(id)
     tab.onclick = (e)=>{
         divContent.innerHTML = tabContent.innerHTML
+        tabBtn.forEach((e)=>{
+            e.classList.remove('active')
+        })
+        e.target.classList.add('active')
     }
 })
