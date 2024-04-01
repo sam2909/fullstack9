@@ -55,18 +55,16 @@ menu .main-nav li:hover{
 
 ul .nav-child{
     opacity: 0;
-    transition: all 5s ease;
+    transition: opacity 5s ease;
 }
 
 /* TAB section */
-#tabs-section{
-    margin: 10px;
-}
-#tabs-title{
+.tabs-tt{
     display: flex;
-    /* gap: 5px; */
+    margin: 10px;
+    gap: 2px;
 }
-#tabs-title div{
+.tabs-tt div{
     width: 100px;
     font-weight: bold;
     color: aliceblue;
@@ -79,18 +77,19 @@ ul .nav-child{
     transition: all 0.5s ease;
 }
 
-#tabs-title div:hover{
+.tabs-tt div:hover{
     background-color: #6f6d6d;
     transform: scale(1.1);
 }
 
 
-#tabs-content{
+.tabs-content{
     max-width: 500px;
     text-wrap: wrap;
     margin-top: 5px;
     padding: 10px 5px;
     border: 1px solid #6f6d6d;
+    margin: 10px;
 }
 .active{
     background-color: #7f7d7d!important;
