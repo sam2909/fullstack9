@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="./icofont.min.css" />
+		<link
+			rel="stylesheet"
+			href="style.css" />
+	</head>
+	<body>
+		<h1 id="docTitle">Music Player</h1>
+
+		<div id="music-player">
+			<audio id="audioPlayer"></audio>
+			<span id='txtCurrentTime'></span><div id="music-progress"><div class="outter"><div id="in-progr"><div id="dotPlay"></div></div></div></div><span id='txtDuration'></span>
+			<div id="audioController"></div>
+			<div id="music-controllers">
+				<button id="repeatBtn">
+					<i class="icofont-duotone icofont-repeat"></i><span id="repeatType"></span>
+				</button>
+				<button id="prevBtn">
+					<i class="icofont-duotone icofont-previous"></i>
+				</button>
+				<button id="playBtn">
+					<i class="icofont-duotone icofont-play-circle"></i>
+				</button>
+				<button id="stopBtn">
+					<i class="icofont-duotone icofont-pause"></i>
+				</button>
+				<button id="nextBtn">
+					<i class="icofont-duotone icofont-next"></i>
+				</button>
+				<button id="shuffleBtn">
+					<i class="icofont-duotone icofont-shuffle"></i>
+				</button>
+			</div>
+		</div>
+	</body>
+	<script src="myscipt.js"></script>
+</html>

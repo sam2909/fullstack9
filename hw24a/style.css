@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+}
+form{
+    margin: 20px;
+}
+
+.errInput{
+    border: 2px solid red;
+}

@@ -1,0 +1,109 @@
+.activebtn {
+    /* background-color: rgb(247, 156, 156); */
+    color: rgb(242, 4, 4);
+    /* border: 1px solid rgb(247, 156, 156); */
+    border-radius: 2px;
+}
+button{
+    border: transparent;
+    background-color: transparent;
+    padding: 0;
+    margin: auto 5px;
+    transition: all 0.2s ease-in;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+button:hover i{
+    color: red;
+}
+
+#music-player{
+    max-width: 300px;
+    margin: auto;
+    color: rgb(139, 137, 137);
+    text-shadow: 0.8px 1px 1px #ffffff;
+    border: 1px solid rgb(202, 193, 193);
+    border-radius: 5px;
+    background-color: rgba(127, 122, 122, 0.334);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#music-progress{
+    width: 200px;
+    height: 20px;
+    margin: 6px 2px;
+    padding:2px;
+}
+#music-progress .outter{
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    border: 0.5px solid rgba(255, 0, 0, 0.251);
+    border-radius: 2px;
+}
+
+#in-progr{
+    background-color: red;
+    height: 100%;
+    width: 30px;
+    position: relative;
+}
+
+#music-progress:hover #dotPlay{
+    display: block;
+}
+#dotPlay{
+    display: none;
+    width: 8px;
+    height: 8px;
+    color: red;
+    border-radius: 8px;
+    background-color: red;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%); 
+    position: absolute;
+}
+#music-controllers{
+    margin: 10px auto;
+}
+
+#repeatType{
+    position: relative;
+}
+#repeatType.repeatOne::after{
+    content: '1';
+    display: block;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: xx-small;
+    top: 0;
+    right: 0;
+    transform: translateY(-80%) translateX(80%);
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+}
+#repeatType.repeatAll::after{
+    content: 'all';
+    display: block;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: xx-small;
+    top: 0;
+    right: 0;
+    transform: translateY(-80%) translateX(80%);
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+}
+
+#txtCurrentTime, #txtDuration{
+    height: 20px;
+    line-height: 20px;
+    font-size: 10px;
+}

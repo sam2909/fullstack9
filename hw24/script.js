@@ -2,7 +2,6 @@ document.title = document.getElementById('docTitle').innerText
 
 
 var parMenu = document.querySelectorAll('[toggleParMenu]');
-
 parMenu.forEach((nav)=>{
     let childNavId = nav.dataset.toggleTarget
     let childNav = document.getElementById(childNavId)
